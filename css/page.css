@@ -1,0 +1,110 @@
+/* CSS File for the Innovation Survey Application Responsive Prototype */
+
+/* Items for every page */
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #2F4F4F;
+  font-family: 'Droid Sans', helvetica, sans-serif;
+  font-size: 10pt;
+  font-weight: normal;
+  height: 100%;
+}
+div.container {
+  width: 100%;
+  text-align: center;
+  margin: 10px 20px 20px 20px;
+}
+h1.page-header {
+  font-size: 60px;	
+  font-weight: bold;
+  font-style: normal;
+  color: black;
+  text-align: center;
+  margin: 20px 10px 10px 50px;
+  padding: 10px 0 0 0;
+}
+
+/* BIG BLUE BUTTONS */
+.button.quiz, button.quiz {
+  font-size: 25px;
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  border-top: rgba(255, 255, 255, 0.2) 1px solid;
+  padding: 0.4em 1em;
+  line-height: 1em;
+  white-space: nowrap;
+  position: relative;
+  background-color: #00ADEE;
+  display: inline-block;
+  /* removes extra side padding in IE */
+  cursor: pointer;
+  border: 1px solid #999;
+  /* IE */
+  border: rgba(0, 0, 0, 0.2) 1px solid;
+  /* Saf4+, Chrome, FF3.6 */
+  border-bottom: rgba(0, 0, 0, 0.4) 1px solid;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  background: -moz-linear-gradient(center top, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+  user-select: none;
+  margin: 20px 30px 20px 30px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.button.quiz:active, button.quiz:active {
+  position: relative;
+  top: 1px;
+}
+.button.quiz:hover, button.quiz:hover {
+  background-color: #1AC2FF;
+}
+ul.quiz-buttons li {
+  display: inline;
+  list-style-type: none;
+} 
+
+/* RADIO BUTTONS */
+div.survey {
+  display: block;
+}
+ul.input-choices {
+  list-style-type: none;
+  display: block;
+  text-align: left;
+}
+ul.input-choices li {
+  padding-bottom: 5px;
+}
+label {
+  white-space: nowrap;
+}
+
+/* RESULTS PAGE CIRCLES */
+button.canvas-circle {
+  background-color: transparent;
+  border: none;
+}
+button.canvas-circle:hover {
+  background-color: #EEEEEE;
+  cursor: pointer;
+}
+ul.result-circles {
+  text-align: center;
+  white-space: nowrap;
+}
+ul.result-circles li {
+  display: inline;
+  padding-right: 20px;
+}
+/* if the screen width goes < 320px, change to the vertical stacking */
+@media all and (max-width: 320px) {
+  ul.result-circles li {
+    list-style-type: none;
+    display: list-item;
+  }
+}

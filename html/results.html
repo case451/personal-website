@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" language="Javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script type="text/javascript" src="../javascript/page.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" media="screen" href="../css/page.css" />
+    <title>Results</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="page-header">Survey Results</h1>
+      <!-- canvas elements for the desired green result circles -->
+      <ul class="result-circles"> 
+        <li>
+          <button class="canvas-circle" onclick="resultsPopover('a')">
+            <canvas id="canvas-circle-A" textValue="a" width="140" height="160">A</canvas>
+          </button>
+        </li>
+        <li>
+          <button class="canvas-circle" onclick="resultsPopover('b')">
+            <canvas id="canvas-circle-B" textValue="b" width="140" height="160">B</canvas>
+          </button>
+        </li>
+        <li>
+          <button class="canvas-circle" onclick="resultsPopover('c')">
+            <canvas id="canvas-circle-C" textValue="c" width="140" height="160">C</canvas>
+          </button>
+        </li>
+        <li>
+          <button class="canvas-circle" onclick="resultsPopover('d')">
+            <canvas id="canvas-circle-D" textValue="d" width="140" height="160">D</canvas>
+          </button>
+        </li>
+        <li>
+          <button class="canvas-circle" onclick="resultsPopover('e')">
+            <canvas id="canvas-circle-E" textValue="e" width="140" height="160">E</canvas>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

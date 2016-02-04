@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" language="Javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script type="text/javascript" src="../javascript/page.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" media="screen" href="../css/page.css" />
+    <title>Survey</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="page-header">Survey Title</h1>
+      <h3 class="question-header">This is a survey question, number X. Which answer best answers this question?</h3>
+      <div class="survey">
+        <!-- Survey radio buttons -->
+        <form class="survey-form">
+          <ul class="input-choices">
+            <li>
+              <label for="a">
+                <input type="radio" name="survey-question" value="a" />
+                A) This is the first answer choice.
+              </label>
+            </li>
+            <li>
+              <label for="b">
+                <input type="radio" name="survey-question" value="b" />
+                B) This is the second answer choice.
+              </label>
+            </li>
+            <li>
+              <label for="c">
+                <input type="radio" name="survey-question" value="c" />
+                C) This is the third answer choice.
+              </label>
+            </li>
+            <li>
+              <label for="d">
+                <input type="radio" name="survey-question" value="d" />
+                D) This is the fourth answer choice.
+              </label>
+            </li>
+            <li>
+              <label for="e">
+                <input type="radio" name="survey-question" value="e" />
+                E) This is the fifth answer choice.
+              </label>
+            </li>
+          </ul>
+        </form>
+      </div>
+      <div>
+        <!-- buttons at the bottom of the survey -->
+        <ul class="quiz-buttons">
+          <li>
+            <button id="previous-button" class="quiz move-back" onclick="">
+              <span>Previous</span>
+            </button>
+          </li>
+          <li>
+            <button id="next-button" class="quiz move-on" onclick="">
+              <span>Next</span>
+            </button>
+          </li>
+          <li>
+            <button id="finish-button" class="quiz move-on" onclick="">
+              <span>Finish</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <!-- progress bar below the survey buttons -->
+      <div id="survey-progress-container">
+        <canvas id="canvas-progress-bar" height="60" width="640">Progress</canvas>
+      </div>
+    </div>
+  </body>
+</html>
