@@ -1,6 +1,5 @@
-/* CSS File for the Innovation Survey Application Responsive Prototype */
+/* CSS File for the greater good O.O */
 
-/* Items for every page */
 html, body {
   margin: 0;
   padding: 0;
@@ -13,7 +12,7 @@ html, body {
 div.container {
   width: 100%;
   text-align: center;
-  margin: 10px 20px 20px 20px;
+  margin: 10px 0px 20px 0px;
 }
 h1.page-header {
   font-size: 60px;	
@@ -21,10 +20,9 @@ h1.page-header {
   font-style: normal;
   color: black;
   text-align: center;
-  margin: 20px 10px 10px 50px;
+  margin: 20px 10px 10px 10px;
   padding: 10px 0 0 0;
 }
-
 /* BIG BLUE BUTTONS */
 .button.quiz, button.quiz {
   font-size: 25px;
