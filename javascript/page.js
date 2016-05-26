@@ -18,7 +18,7 @@ window.onload = function() {
     writePercentageForProgressBarAltTextField(progressId, numQuestions);
     hideSurveyButton(numQuestions);
   }
-  else if (window.location.href.search("welcome") !== -1) {
+  if (document.getElementById("ph1")) {
     var headers = [
       "I am going to eat your family.",
       "I value our friendship.",
@@ -34,7 +34,8 @@ window.onload = function() {
       "Neither can live while the other survives.",
       "One day, the last Belieber will die.",
       "Wars are made and somehow that is wisdom.",
-      "#blessed"
+      "#blessed",
+      "Do you believe what you read?"
     ];
     var header = headers[Math.floor(Math.random()*headers.length)];
     document.getElementById("ph1").textContent = header;
