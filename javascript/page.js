@@ -18,6 +18,27 @@ window.onload = function() {
     writePercentageForProgressBarAltTextField(progressId, numQuestions);
     hideSurveyButton(numQuestions);
   }
+  else if (window.location.href.search("welcome") !== -1) {
+    var headers = [
+      "I am going to eat your family.",
+      "I value our friendship.",
+      "Release your inhibitions.",
+      "When you're a Jet, you're a Jet all the way.",
+      "Hell hath no fury because it doesn't exist.",
+      "Where's Waldo? Uranus.",
+      "Don't dream it, be it.",
+      "I invented the piano-key necktie!",
+      "Do you see what happens when you fight a stranger in the Alps?",
+      "What was that noise behind you? o.o",
+      "Forgiveness... can you imagine?",
+      "Neither can live while the other survives.",
+      "One day, the last Belieber will die.",
+      "Wars are made and somehow that is wisdom.",
+      "#blessed"
+    ];
+    var header = headers[Math.floor(Math.random()*headers.length)];
+    document.getElementById("ph1").textContent = header;
+  }
 }
 
 //
